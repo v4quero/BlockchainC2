@@ -1,4 +1,5 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.15;
 
 contract EventC2 {
 
@@ -7,7 +8,7 @@ contract EventC2 {
     event _ServerData(bool f, bool enc, int seq, string agentID, string data);
     event _ClientData(bool f, bool enc, int seq, string agentID, string data);
 
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
     
