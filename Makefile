@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := all
 
 goland: solidity
+	go mod init cmd
 	GO111MODULE=on go get ./...
 	go build -o bin/bc2server -i blockchainc2/cmd/bc2server
 	go build -o bin/bc2agent -i blockchainc2/cmd/bc2agent
