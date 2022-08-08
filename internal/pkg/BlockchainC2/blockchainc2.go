@@ -32,7 +32,8 @@ func DeployContract(key string, password string, endpoint string) string {
 		return ""
 	}
 
-	auth, err := bind.NewTransactor(strings.NewReader(key), password)
+	auth, err := bind.NewTransactorWithChainID(strings.NewReader(key), password,
+		big.NewInt(15))
 	if err != nil {
 		log.Fatalf("[!] Failed to create authorized transactor: %v", err)
 		return ""
