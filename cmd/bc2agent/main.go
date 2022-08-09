@@ -127,8 +127,9 @@ func printIntro() {
 	| $$$$$$$/|  $$$$$$/| $$$$$$$$
 	|_______/  \______/ |________/
 	
-	 BlockchainC2 Agent
+	 BlockchainC2 Goerli Agent
 	 POC by @_xpn_
+	 Forked and maintained by @V4quero
 								  
 								  
 `)
