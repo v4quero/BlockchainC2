@@ -53,7 +53,7 @@ func splitSubN(s string, n int) []string {
 // GetCurrentTransactionNonce returns the current transactionID from the Infura API for the provided wallet
 func GetCurrentTransactionNonce(addr string) (int64, error) {
 	resp, err := http.Post(
-		"https://ropsten.infura.io/",
+		"https://goerli.infura.io/v3/**INSERT-INFURA-API-KEY-HERE**",
 		"application/json",
 		bytes.NewBuffer([]byte("{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionCount\",\"params\": [\""+addr+"\",\"latest\"],\"id\":1}")),
 	)
