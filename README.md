@@ -1,4 +1,4 @@
-# BloackchainC2
+# BlockchainC2
 
 This is a fork of @xpn's BlockchainC2 project, porting the original C2 to the goerli testnet. This is a small POC server/agent to assess how the Blockchain (specifically Ethereum's Smart Contract functionality) can be used by an attacker for C2.
 
