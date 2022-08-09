@@ -3,6 +3,7 @@ package BlockchainC2
 import (
 	"fmt"
 	"log"
+	"math/big"
 	"strings"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -33,7 +34,7 @@ func DeployContract(key string, password string, endpoint string) string {
 	}
 
 	auth, err := bind.NewTransactorWithChainID(strings.NewReader(key), password,
-		big.NewInt(15))
+		big.NewInt(5))
 	if err != nil {
 		log.Fatalf("[!] Failed to create authorized transactor: %v", err)
 		return ""
