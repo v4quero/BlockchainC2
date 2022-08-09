@@ -46,6 +46,9 @@ brew tap ethereum/ethereum
 brew install ethereum
 brew install solidity
 
+git clone repo
+Add your infura API Key to the config.json and to the file here GoerliC2/internal/pkg/BlockchainC2/utils.go
+
 # Build
 make all
 ```
