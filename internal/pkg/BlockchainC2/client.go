@@ -173,7 +173,8 @@ func CreateBlockchainClient(key, password, endpoint, contractAddress, agentID st
 	}
 
 	// Create a new transactopts to allow processing of transactions when sending events
-	auth, err := bind.NewTransactor(strings.NewReader(client.Key), password)
+	auth, err := bind.NewTransactorWithChainID(strings.NewReader(key), password,
+	big.NewInt(5))
 	if err != nil {
 		return nil, fmt.Errorf("Failed to create authorized transactor: %v", err)
 	}
