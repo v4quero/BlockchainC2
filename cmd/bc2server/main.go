@@ -138,6 +138,7 @@ func printIntro() {
 	
 	 BlockchainC2 Server
 	 POC by @_xpn_
+	 Forked and maintained by @V4quero
 								  
 								  
 `)
