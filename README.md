@@ -59,7 +59,7 @@ To build on Ubuntu:
 # Install solidity and ethereum
 sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
-sudo apt-get install solc ethereum
+sudo apt-get install solc ethereum golang
 
 # Build  
 make all
